@@ -12,7 +12,6 @@ I alle dele af arbejdet har vi anvendt datasettet WineQT.csv
 Fil: random_forest_classification.ipynb
 Her har vi arbejdet med klassifikationstræer, beslutningstræer, bagging, tuning af hyperparametre samt krydsvalidering (k-fold og leave one out)
 Konklusion: Vi kan på baggrund af ovenstående beregninger og analyser konkludere flg. med nogenlunde sikkerhed:
-* Om det testede vindatasæt i denne notebook kan vi sige:
 * Standardscoren for klassifikation med Random Forest Classification fra Scikit Learn kan forbedres ved tuning af parameteren.
 * En grådig tuning af parametrene forbedrer standardscoren.
 * En randomiseret test af parameterkombinationer giver en lidt højere score.
