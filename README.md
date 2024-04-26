@@ -14,9 +14,17 @@ Her har vi arbejdet med klassifikationstræer, beslutningstræer, bagging, tunin
 Konklusion: Efter at have afsøgt forskellige fremgangsmåder til forbedring af modellens præcision (accuracy score), kan vi se at scoren for det beskårede træ er 60.7%, hvilket er noget bedre end ved det oprindelige træ, hvor den var 56.7%
 Vi får altså den bedste score ved at bruge Giniindexet, og da træ med entropy der beskæres var bedre en ved logistisk regression, så er dette træ med Gini, beskåret endnu bedre.
 
- Fil: Deep_learning_classification_tensorflow_tenserboard
+Fil: Klassifikationstræ
+Ligesom i den foregående fil forsøger vi her at anvende et klassifikationstræ på wineQT.csv datasættet med anvendelse af Entropy og Giniindex for at finde objektive kriterier for vinens kvalitet. Vi forsøger igen at skrue på træets dybde ved at beskære det (prunning).
+Konklusion:
+Med entropy er scoren for beskårede træ 60.1%, hvilket er noget bedre end ved det oprindelige træ, hvor den kun havde en score på 55.3% Den er også bedre end de 
+57.3% ved logistisk regression, som vi lavede i aflevering 2.
+Med Giniindex er scoren for det beskårede træ 60.7%, hvilket er en anelse bedre. Vi får altså den bedste score ved at bruge Giniindexet, og da træ med entropy der beskæres var bedre en ved logistisk regression, så er dette træ med Gini, beskåret endnu bedre. Så altså samme konklusion omend fremgangsmåde er lidt anderledes. 
+
+Fil: Deep_learning_classification_tensorflow_tenserboard
 Her har vi lavet iterative gennemløb af dataen med ANN (artificial neural network) og inddraget forskellige metoder og skruet på parametre for at forbedre accuracy score med henblik på at finde den optimale kombination. 
-Konklusion: Overordnet kan vi konkludere, at tensorboardet giver et godt overblik over epochs og loss. Det bliver tydeligt hvornår både epochs og loss begynder og flader ud, og hvor der evt. kunne være brug for et early stop. Tensorboardet gir også et indtryk, i graferne for epochs vs. iteration og loss vs. iteration, af over/under fitting.  
+Konklusion: 
+Overordnet kan vi konkludere, at tensorboardet giver et godt overblik over epochs og loss. Det bliver tydeligt hvornår både epochs og loss begynder og flader ud, og hvor der evt. kunne være brug for et early stop. Tensorboardet gir også et indtryk, i graferne for epochs vs. iteration og loss vs. iteration, af over/under fitting.  
 Ud fra tre gennemløb af vores test af modellen kan vi også i denne version konkludere følgende med nogenlunde sikkerhed:  
   * Det betyder rigtig meget for modellens accuracy, hvordan den er sat sammen (vi får i dette tilfælde resultater fra ca. 49% til ca 66%).  
   * Vi kan efter de tre gennemløb se, at vi overvejende får et godt resultat ved at bruge rmsprop optimeringsmetoden. Vi kan anvende sgd og adam, men det kræver et stort antal neuroner og mange epochs.  
@@ -35,5 +43,5 @@ Vi kan ikke sige meget om:
  * Kunne vi sammensætte en model, som præsterer endnu bedre?
  * Er det de mest relevante parametre, vi har ændret på?
 
-Fil: Klassifikationstræ
+
 
