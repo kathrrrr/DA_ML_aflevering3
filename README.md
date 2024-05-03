@@ -9,6 +9,38 @@ Torben Holst Rendboe – AU20064217
 I denne ReadMe fil har vi valgt at lave en kort oversigt over de forskellige dokumenter i aflevering 3 samt en opsamlende konklusion.
 I alle dele af arbejdet har vi anvendt datasettet WineQT.csv 
 
+## Nedenstående notebooks kan køres enten via Google colab eller ved hjælp af conda virtual environments
+### Opsætning af Conda virtual environment 
+For at oprette et virtuelt miljø ved hjælp af Conda og installere alle nødvendige afhængigheder, følg nedenstående trin. Dette sikrer, at du har et konsistent udviklingsmiljø, som omfatter alle de pakker, der er nødvendige for dette projekt.
+
+### Forudsætninger
+- Sørg for, at du har Conda installeret på dit system. Du kan downloade det fra [Anacondas hjemmeside](https://www.anaconda.com/products/distribution) eller installere Miniconda, som er en lettere version.
+
+### Oprettelse af miljøet
+1. **Klon Repositoriet:**
+   Først skal du klone repositoriet til din lokale maskine ved hjælp af Git, eller downloade projektmappe.
+
+   ```bash
+   git clone https://github.com/kathrrrr/DA_ML_aflevering3
+   cd DA_ML_aflevering3
+
+2. **Opret Conda-miljøet:**
+   Brug `environment.yml`-filen, som findes i projektmappe, til at oprette et nyt Conda-miljø. Denne fil indeholder alle nødvendige pakkespecifikationer.
+
+   ```bash
+   conda env create -f environment.yml
+
+3. **Aktivér Miljøet:**
+   Når miljøet er oprettet, kan du aktivere det ved at bruge:
+
+   ```bash
+   conda activate DAML_group1_homework3
+
+3. **Kør en af de nedenstående filer:**
+For at åbne en ny notebook, kan du skrive nedenstående kommando:
+ ```bash
+   jupyter notebook random_forest_classification.ipynb
+
 Fil: random_forest_classification.ipynb
 Her har vi arbejdet med klassifikationstræer, beslutningstræer, bagging, tuning af hyperparametre samt krydsvalidering (k-fold og leave one out)
 Konklusion: Vi kan på baggrund af ovenstående beregninger og analyser konkludere flg. med nogenlunde sikkerhed:
