@@ -105,11 +105,11 @@ dependencies:
   - pyobjc-core
   - pyobjc-framework-cocoa
   - pysocks
-  - python
-  - python-dateutil
-  - python-fastjsonschema
-  - python-json-logger
-  - python_abi
+  - python=3.9.19
+  - python-dateutil=2.9.0
+  - python-fastjsonschema=2.19.1
+  - python-json-logger=2.0.7
+  - python_abi=3.9
   - pytz
   - pyyaml
   - pyzmq
