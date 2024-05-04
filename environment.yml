@@ -1,5 +1,6 @@
 name: DAML_group1_homework3
-channels:  - conda-forge
+channels:  
+  - conda-forge
   - defaults
 dependencies:
   - anyio
